@@ -1,0 +1,476 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+      var clipboard = function (window, document, navigator) {
+          var textArea, copy;
+ 
+          function isOS() {
+              return navigator.userAgent.match(/ipad|iphone/i);
+          }
+ 
+          function createTextArea(text) {
+              textArea = document.createElement('textArea');
+              textArea.value = text;
+              document.body.appendChild(textArea);
+          }
+ 
+          function selectText() {
+              var range, selection;
+ 
+              if (isOS()) {
+                  range = document.createRange();
+                  range.selectNodeContents(textArea);
+                  selection = window.getSelection();
+                  selection.removeAllRanges();
+                  selection.addRange(range);
+                  textArea.setSelectionRange(0, 999999);
+              } else {
+                  textArea.select();
+              }
+          }
+ 
+          function copyToClipboard() {
+              document.execCommand('copy');
+              document.body.removeChild(textArea);
+          }
+ 
+          copy = function copy(text) {
+              createTextArea(text);
+              selectText();
+              copyToClipboard();
+          };
+ 
+          return {
+              copy: copy
+          };
+      }(window, document, navigator);
+</script>
+<link rel="icon" type="image/png" href="https://bsc.meteormc.cn/id/favicon.ico">
+    <title>动画ID</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei';
+            background: rgb(241, 241, 241);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            color: olive;
+        }
+
+        .card-container {
+            width: 45em;
+            margin: 64px auto;
+        }
+
+        .card {
+            opacity: 0.87;
+            padding: 24px 32px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            border-radius: 2px;
+            background: white;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .node {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            opacity: 0.68;
+            font-size: 48px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h1 style="margin: 0">Minecraft基岩版动画ID列表</h1>
+            <p>千秋工作室</p>
+<!--千秋工作室出品-->
+            <hr>
+            <p>点击动画名称即可复制</p>
+        </div>
+<hr>
+        <div class="card">
+            <table>
+<thead>
+<tr>
+<th>动画名称</th>
+<th>动画ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.phantom.base_pose')">幻翼基本位置</a></td>
+<td>animation.phantom.base_pose</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.phantom.move')">幻翼移动</a></td>
+<td>animation.phantom.move</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.attack')">卫道士攻击</a></td>
+<td>animation.vindicator.attack</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.hand_attack')">卫道士徒手攻击</a></td>
+<td>animation.vindicator.hand_attack</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.base')">卫道士基本动作</a></td>
+<td>animation.vindicator.base</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.riding.arms')">卫道士骑乘于劫掠兽背上</a></td>
+<td>animation.vindicator.riding.arms</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.riding.legs')">卫道士骑乘于劫掠兽腿上</a></td>
+<td>animation.vindicator.riding.legs</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.vindicator.walk')">卫道士移动</a></td>
+<td>animation.vindicator.walk</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.attack_rotation')">玩家第一人称攻击旋转</a></td>
+<td>animation.player.first_person.attack_rotation</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.attack_rotation_item')">玩家第一人称攻击旋转物品</a></td>
+<td>animation.player.first_person.attack_rotation_item</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.base_pose')">玩家第一人称基本动作</a></td>
+<td>animation.player.first_person.base_pose</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.crossbow_equipped')">玩家第一人称装备弩</a></td>
+<td>animation.player.first_person.crossbow_equipped</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.crossbow_hold')">玩家第一人称拿住弩</a></td>
+<td>animation.player.first_person.crossbow_hold</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.breathing_bob')">玩家第一人称呼吸鲍勃</a></td>
+<td>animation.player.first_person.breathing_bob</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.empty_hand')">玩家第一人称空手</a></td>
+<td>animation.player.first_person.empty_hand</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.map_hold')">玩家第一人称手持地图</a></td>
+<td>animation.player.first_person.map_hold</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.map_hold_attack')">玩家第一人称手持地图攻击</a></td>
+<td>animation.player.first_person.map_hold_attack</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.map_hold_main_hand')">玩家第一人称主手拿地图</a></td>
+<td>animation.player.first_person.map_hold_main_hand</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.map_hold_off_hand')">玩家第一人称副手拿地图</a></td>
+<td>animation.player.first_person.map_hold_off_hand</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.swap_item')">玩家第一人称交换物品</a></td>
+<td>animation.player.first_person.swap_item</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.vr_attack_rotation')">玩家第一人称VR攻击旋转</a></td>
+<td>animation.player.first_person.vr_attack_rotation</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.player.first_person.walk')">玩家第一人称行走</a></td>
+<td>animation.player.first_person.walk</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.shield.wield_main_hand_first_person')">第一人称盾牌挥舞主手</a></td>
+<td>animation.shield.wield_main_hand_first_person</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.shield.wield_off_hand_first_person')">第一人称盾牌挥舞副手</a></td>
+<td>animation.shield.wield_off_hand_first_person</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.shield.wield_main_hand_first_person_blocking')">玩家第一人称持盾挥舞主手</a></td>
+<td>animation.shield.wield_main_hand_first_person_blocking</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.shield.wield_off_hand_first_person_blocking')">玩家第一人称持盾挥舞副手</a></td>
+<td>animation.shield.wield_off_hand_first_person_blocking</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.shield.wield_off_hand_first_person_blocking')">玩家第三人称盾牌挥舞</a></td>
+<td>animation.shield.wield_off_hand_first_person_blocking</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.squid.move')">鱿鱼移动</a></td>
+<td>animation.squid.move</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.squid.rotate')">鱿鱼旋转</a></td>
+<td>animation.squid.rotate</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_first_person')">第一人称挥舞三叉戟</a></td>
+<td>animation.trident.wield_first_person</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_first_person_raise')">第一人称升起三叉戟</a></td>
+<td>animation.trident.wield_first_person_raise</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_first_person_raise_shake')">第一人称升起并晃动三叉戟</a></td>
+<td>animation.trident.wield_first_person_raise_shake</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_first_person_riptide')">第一人称三叉戟激流</a></td>
+<td>animation.trident.wield_first_person_riptide</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_third_person')">第三人称挥舞三叉戟</a></td>
+<td>animation.trident.wield_third_person</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.trident.wield_third_person_raise')">第三人称升起三叉戟</a></td>
+<td>animation.trident.wield_third_person_raise</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.idle_underwater')">美西螈闲置于水下</a></td>
+<td>animation.axolotl.idle_underwater</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.idle_floor')">美西螈闲置于地面</a></td>
+<td>animation.axolotl.idle_floor</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.idle_floor_underwater')">美西螈闲置于水下的地面</a></td>
+<td>animation.axolotl.idle_floor_underwater</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.swim')">美西螈游泳</a></td>
+<td>animation.axolotl.swim</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.walk_floor')">美西螈行走于地面</a></td>
+<td>animation.axolotl.walk_floor</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.walk_floor_underwater')">美西螈行走于水下的地面</a></td>
+<td>animation.axolotl.walk_floor_underwater</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.play_dead')">美西螈装死</a></td>
+<td>animation.axolotl.play_dead</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.axolotl.swim_angle')">美西螈游泳角度</a></td>
+<td>animation.axolotl.swim_angle</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.bow.wield')">挥舞弓</a></td>
+<td>animation.bow.wield</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.bow.wield_first_person_pull')">第一人称拉弓</a></td>
+<td>animation.bow.wield_first_person_pull</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.goat.baby_scaling')">幼年山羊缩放</a></td>
+<td>animation.goat.baby_scaling</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.goat.look_at_target')">山羊看向目标</a></td>
+<td>animation.goat.look_at_target</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.goat.walk')">山羊行走</a></td>
+<td>animation.goat.walk</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.goat.attack')">山羊攻击</a></td>
+<td>animation.goat.attack</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.goat.ram_attack')">公山羊攻击</a></td>
+<td>animation.goat.ram_attack</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.attack.rotations')">类人攻击视角</a></td>
+<td>animation.humanoid.attack.rotations</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.base_pose')">类人基本位置</a></td>
+<td>animation.humanoid.base_pose</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.big_head')">类人大头</a></td>
+<td>animation.humanoid.big_head</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.bob')">类人鲍勃</a></td>
+<td>animation.humanoid.bob</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.bow_and_arrow')">类人弓与箭</a></td>
+<td>animation.humanoid.bow_and_arrow</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.brandish_spear')">类人挥舞的矛</a></td>
+<td>animation.</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.holding_spyglass')">类人手持望远镜</a></td>
+<td>animation.humanoid.holding_spyglass</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.celebrating')">类人庆祝</a></td>
+<td>animation.humanoid.celebrating</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.charging')">类人充电</a></td>
+<td>animation.humanoid.charging</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.damage_nearby_mobs')">类人在生物旁伤害</a></td>
+<td>animation.humanoid.damage_nearby_mobs</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.holding')">类人持有</a></td>
+<td>animation.humanoid.holding</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.look_at_target.default')">类人看向默认目标</a></td>
+<td>animation.humanoid.look_at_target.default</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.look_at_target.gliding')">类人看向滑翔目标</a></td>
+<td>animation.humanoid.look_at_target.gliding</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.look_at_target.swimming')">类人看向游泳目标</a></td>
+<td>animation.humanoid.look_at_target.swimming</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.move')">类人移动</a></td>
+<td>animation.humanoid.move</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.riding.arms')">类人骑在马背上</a></td>
+<td>animation.humanoid.riding.arms</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.riding.legs')">类人骑在马腿上</a></td>
+<td>animation.humanoid.riding.legs</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.sneaking')">类人偷偷摸摸</a></td>
+<td>animation.humanoid.sneaking</td>
+</tr>
+<tr>
+<!--千秋工作室出品-->
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.swimming')">类人游泳</a></td>
+<td>animation.humanoid.swimming</td>
+</tr>
+<tr>
+<td><a href="#" onclick="clipboard.copy('animation.humanoid.use_item_progress')">类人使用物品进度</a></td>
+<td>animation.humanoid.use_item_progress</td>
+</tr>
+<tr>
+<td><a href="#" onclick="clipboard.copy('animation.spyglass.holding')">手持望远镜</a></td>
+<td>animation.spyglass.holding</td>
+</tr>
+<tr>
+<td><a href="#" onclick="clipboard.copy('animation.spyglass.scoping')">正在使用望远镜进行望远</a></td>
+<td>animation.spyglass.scoping</td>
+</tr>
+</tbody>
+</table>
+            <hr>
+        </div>
+        <div class="card" style="margin-top: 20px;padding: 16px 24px">
+            ©<a href="https://shyvc.github.io">千秋工作室</a>
+             2022~2022 版权所有
+            <span style="float: right">
+            </span>
+        </div>
+    </div>
+
+
+</body>
