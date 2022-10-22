@@ -1,0 +1,655 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+
+      var clipboard = function (window, document, navigator) {
+
+          var textArea, copy;
+
+ 
+
+          function isOS() {
+
+              return navigator.userAgent.match(/ipad|iphone/i);
+
+          }
+
+ 
+
+          function createTextArea(text) {
+
+              textArea = document.createElement('textArea');
+
+              textArea.value = text;
+
+              document.body.appendChild(textArea);
+
+          }
+
+ 
+
+          function selectText() {
+
+              var range, selection;
+
+ 
+
+              if (isOS()) {
+
+                  range = document.createRange();
+
+                  range.selectNodeContents(textArea);
+
+                  selection = window.getSelection();
+
+                  selection.removeAllRanges();
+
+                  selection.addRange(range);
+
+                  textArea.setSelectionRange(0, 999999);
+
+              } else {
+
+                  textArea.select();
+
+              }
+
+          }
+
+ 
+
+          function copyToClipboard() {
+
+              document.execCommand('copy');
+
+              document.body.removeChild(textArea);
+
+          }
+
+ 
+
+          copy = function copy(text) {
+
+              createTextArea(text);
+
+              selectText();
+
+              copyToClipboard();
+
+          };
+
+ 
+
+          return {
+
+              copy: copy
+
+          };
+
+      }(window, document, navigator);
+
+</script>
+
+<link rel="icon" type="image/png" href="https://bsc.meteormc.cn/id/favicon.ico">
+
+    <title>效果ID</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Microsoft YaHei';
+
+            background: rgb(241, 241, 241);
+
+        }
+
+        a {
+
+            color: black;
+
+            text-decoration: none;
+
+            color: olive;
+
+        }
+
+        .card-container {
+
+            width: 35em;
+
+            margin: 64px auto;
+
+        }
+
+        .card {
+
+            opacity: 0.87;
+
+            padding: 24px 32px;
+
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+            border-radius: 2px;
+
+            background: white;
+
+            margin-bottom: 8px;
+
+            position: relative;
+
+        }
+
+        .node {
+
+            position: absolute;
+
+            top: 16px;
+
+            right: 24px;
+
+            opacity: 0.68;
+
+            font-size: 48px;
+
+            font-weight: 400;
+
+        }
+
+    </style>
+
+<meta content="target-densitydpi=400" name="viewport"><meta content="target-densitydpi=400" name="viewport"></head>
+
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+
+            <h1 style="margin: 0">Minecraft效果ID列表</h1>
+
+            <p>千秋工作室出品</p>
+
+<!--千秋工作室出品-->
+
+            <hr>
+
+            <p>点击效果名称即可复制</p>
+
+        </div>
+
+<hr>
+
+        <div class="card">
+
+            <table>
+
+<thead>
+
+<tr>
+
+<th>编号</th>
+
+<th>效果名称</th>
+
+<th>效果ID</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>1</th>
+
+<td><a href="#" onclick="clipboard.copy('speed')">速度</a></td>
+
+<td>speed</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>2</th>
+
+<td><a href="#" onclick="clipboard.copy('slowness')">缓慢</a></td>
+
+<td>slowness</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>3</th>
+
+<td><a href="#" onclick="clipboard.copy('haste')">急迫</a></td>
+
+<td>haste</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>4</th>
+
+<td><a href="#" onclick="clipboard.copy('mining_fatigue')">挖掘疲劳</a></td>
+
+<td>mining_fatigue</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>5</th>
+
+<td><a href="#" onclick="clipboard.copy('strength')">力量</a></td>
+
+<td>strength</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>6</th>
+
+<td><a href="#" onclick="clipboard.copy('instant_health')">瞬间治疗</a></td>
+
+<td>instant_health</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>7</th>
+
+<td><a href="#" onclick="clipboard.copy('instant_damage')">瞬间伤害</a></td>
+
+<td>instant_damage</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>8</th>
+
+<td><a href="#" onclick="clipboard.copy('jump_boost')">跳跃增强</a></td>
+
+<td>jump_boost</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>9</th>
+
+<td><a href="#" onclick="clipboard.copy('nausea')">反胃</a></td>
+
+<td>nausea</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>10</th>
+
+<td><a href="#" onclick="clipboard.copy('regeneration')">生命恢复</a></td>
+
+<td>regeneration</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>11</th>
+
+<td><a href="#" onclick="clipboard.copy('resistance')">抗性提升</a></td>
+
+<td>resistance</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>12</th>
+
+<td><a href="#" onclick="clipboard.copy('fire_resistance')">抗火</a></td>
+
+<td>fire_resistance</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>13</th>
+
+<td><a href="#" onclick="clipboard.copy('water_breathing')">水下呼吸</a></td>
+
+<td>water_breathing</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>14</th>
+
+<td><a href="#" onclick="clipboard.copy('invisibility')">隐身</a></td>
+
+<td>invisibility</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>15</th>
+
+<td><a href="#" onclick="clipboard.copy('blindness')">失明</a></td>
+
+<td>blindness</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>16</th>
+
+<td><a href="#" onclick="clipboard.copy('night_vision')">夜视</a></td>
+
+<td>night_vision</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>17</th>
+
+<td><a href="#" onclick="clipboard.copy('hunger')">饥饿</a></td>
+
+<td>hunger</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>18</th>
+
+<td><a href="#" onclick="clipboard.copy('weakness')">虚弱</a></td>
+
+<td>weakness</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>19</th>
+
+<td><a href="#" onclick="clipboard.copy('poison')">中毒</a></td>
+
+<td>poison</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>20</th>
+
+<td><a href="#" onclick="clipboard.copy('wither')">凋零</a></td>
+
+<td>wither</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>21</th>
+
+<td><a href="#" onclick="clipboard.copy('health_boost')">生命提升</a></td>
+
+<td>health_boost</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>22</th>
+
+<td><a href="#" onclick="clipboard.copy('absorption')">伤害吸收</a></td>
+
+<td>absorption</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>23</th>
+
+<td><a href="#" onclick="clipboard.copy('saturation')">饱和</a></td>
+
+<td>saturation</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>24</th>
+
+<td><a href="#" onclick="clipboard.copy('glowing')">发光</a></td>
+
+<td>glowing</td>
+
+<td><b>仅Java版</b></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>25</th>
+
+<td><a href="#" onclick="clipboard.copy('levitation')">漂浮</a></td>
+
+<td>levitation</td>
+
+<td>Java版数字ID为25，基岩版为24</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>26</th>
+
+<td><a href="#" onclick="clipboard.copy('fatal_poison')">致命中毒</a></td>
+
+<td>fatal_poison</td>
+
+<td><b>仅基岩版</b>，数字ID为25</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>27</th>
+
+<td><a href="#" onclick="clipboard.copy('luck')">幸运</a></td>
+
+<td>luck</td>
+
+<td><b>仅Java版</b>，数字ID为26</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>28</th>
+
+<td><a href="#" onclick="clipboard.copy('unluck')">霉运</a></td>
+
+<td>unluck</td>
+
+<td><b>仅Java版</b>，数字ID为27</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>29</th>
+
+<td><a href="#" onclick="clipboard.copy('slow_falling')">缓降</a></td>
+
+<td>slow_falling</td>
+
+<td>Java版数字ID为28，基岩版为27</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>30</th>
+
+<td><a href="#" onclick="clipboard.copy('conduit_power')">潮涌能量</a></td>
+
+<td>conduit_power</td>
+
+<td>Java版数字ID为29，基岩版为26</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>31</th>
+
+<td><a href="#" onclick="clipboard.copy('dolphins_grace')">海豚恩惠</a></td>
+
+<td>dolphins_grace</td>
+
+<td><b>仅Java版</b>，数字ID为30</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>32</th>
+
+<td><a href="#" onclick="clipboard.copy('bad_omen')">不详之兆</a></td>
+
+<td>bad_omen</td>
+
+<td>Java版数字ID为31，基岩版为28</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>33</th>
+
+<td><a href="#" onclick="clipboard.copy('hero_of_the_village')">村庄英雄</a></td>
+
+<td>hero_of_the_village</td>
+
+<td>Java版数字ID为32，基岩版为29</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>33</th>
+
+<td><a href="#" onclick="clipboard.copy('darkness')">黑暗</a></td>
+
+<td>darkness</td>
+
+<td><b>仅1.18.0+</b>，JE数字ID33，BE30</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+        </div>
+
+        <div class="card" style="margin-top: 20px;padding: 16px 24px">
+
+            ©<a href="https://bsc.meteormc.cn/index.html">千秋工作室</a>
+
+             2022~2022 版权所有
+
+            <span style="float: right">
+
+              
+
+            </span>
+
+        </div>
+
+    </div>
+
+</body>
