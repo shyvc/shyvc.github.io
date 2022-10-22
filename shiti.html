@@ -1,0 +1,1653 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+
+      var clipboard = function (window, document, navigator) {
+
+          var textArea, copy;
+
+ 
+
+          function isOS() {
+
+              return navigator.userAgent.match(/ipad|iphone/i);
+
+          }
+
+ 
+
+          function createTextArea(text) {
+
+              textArea = document.createElement('textArea');
+
+              textArea.value = text;
+
+              document.body.appendChild(textArea);
+
+          }
+
+ 
+
+          function selectText() {
+
+              var range, selection;
+
+ 
+
+              if (isOS()) {
+
+                  range = document.createRange();
+
+                  range.selectNodeContents(textArea);
+
+                  selection = window.getSelection();
+
+                  selection.removeAllRanges();
+
+                  selection.addRange(range);
+
+                  textArea.setSelectionRange(0, 999999);
+
+              } else {
+
+                  textArea.select();
+
+              }
+
+          }
+
+ 
+
+          function copyToClipboard() {
+
+              document.execCommand('copy');
+
+              document.body.removeChild(textArea);
+
+          }
+
+ 
+
+          copy = function copy(text) {
+
+              createTextArea(text);
+
+              selectText();
+
+              copyToClipboard();
+
+          };
+
+ 
+
+          return {
+
+              copy: copy
+
+          };
+
+      }(window, document, navigator);
+
+</script>
+
+<link rel="icon" type="image/png" href="https://bsc.meteormc.cn/id/favicon.ico">
+
+    <title>实体ID </title>
+
+    <style>
+
+        body {
+
+            font-family: 'Microsoft YaHei';
+
+            background: rgb(241, 241, 241);
+
+        }
+
+        a {
+
+            color: black;
+
+            text-decoration: none;
+
+            color: olive;
+
+        }
+
+        .card-container {
+
+            width: 35em;
+
+            margin: 64px auto;
+
+        }
+
+        .card {
+
+            opacity: 0.87;
+
+            padding: 24px 32px;
+
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+            border-radius: 2px;
+
+            background: white;
+
+            margin-bottom: 8px;
+
+            position: relative;
+
+        }
+
+        .node {
+
+            position: absolute;
+
+            top: 16px;
+
+            right: 24px;
+
+            opacity: 0.68;
+
+            font-size: 48px;
+
+            font-weight: 400;
+
+        }
+
+    </style>
+
+<meta content="target-densitydpi=400" name="viewport"><meta content="target-densitydpi=400" name="viewport"><meta content="target-densitydpi=400" name="viewport"><meta content="target-densitydpi=400" name="viewport"></head>
+
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+
+            <h1 style="margin: 0">Minecraft实体ID列表</h1>
+
+            <p>千秋工作室出品</p>
+
+<!--千秋工作室出品-->
+
+            <hr>
+
+            <p>点击实体名称即可复制</p>
+
+        </div>
+
+<hr>
+
+        <div class="card">
+
+            <table>
+
+<thead>
+
+<tr>
+
+<th>实体名称</th>
+
+<th>实体ID</th>
+
+<th>限制</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('item')">掉落物</a></td>
+
+<td>item</td>
+
+<td>仅限选择器参数</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('experience_orb')">经验球</a></td>
+
+<td>experience_orb</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('xp_orb')">经验球</a></td>
+
+<td>xp_orb</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('area_effect_cloud')">区域效果云</a></td>
+
+<td>area_effect_cloud</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('leash_knot')">栓绳结</a></td>
+
+<td>leash_knot</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('item_frame')">物品展示框</a></td>
+
+<td>item_frame</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('armor_stand')">盔甲架</a></td>
+
+<td>armor_stand</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('evoker_fangs')">唤魔者尖牙</a></td>
+
+<td>evoker_fangs</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('evocation_fang')">唤魔者尖牙</a></td>
+
+<td>evocation_fang</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ender_crystal')">末影水晶</a></td>
+
+<td>ender_crystal</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('egg')">鸡蛋</a></td>
+
+<td>egg</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('arrow')">箭</a></td>
+
+<td>arrow</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('snowball')">雪球</a></td>
+
+<td>snowball</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('fireball')">烈焰人火球</a></td>
+
+<td>fireball</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('fireworks_rocket')">烟花火箭</a></td>
+
+<td>fireworks_rocket</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('small_fireball')">射出的火球</a></td>
+
+<td>small_fireball</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ender_pearl')">末影珍珠</a></td>
+
+<td>ender_pearl</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ender_eye')">末影眼</a></td>
+
+<td>ender_eye</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('eye_of_ender_signal')">末影眼</a></td>
+
+<td>eye_of_ender_signal</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('dragon_fireball')">末影龙火球</a></td>
+
+<td>dragon_fireball</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('experience_bottle')">附魔之瓶</a></td>
+
+<td>experience_bottle</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('xp_bottle')">附魔之瓶</a></td>
+
+<td>xp_bottle</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wither_skull')">凋灵头火球</a></td>
+
+<td>wither_skull</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wither_skull_dangerous')">凋灵头火球(危险版)</a></td>
+
+<td>wither_skull_dangerous</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('shulker_bullet')">潜影贝导弹</a></td>
+
+<td>shulker_bullet</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('spectral_arrow')">光灵箭</a></td>
+
+<td>spectral_arrow</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('llama_spit')">羊驼吐沫</a></td>
+
+<td>llama_spit</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('tnt')">TNT</a></td>
+
+<td>tnt</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('falling_block')">下落的方块</a></td>
+
+<td>falling_block</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('moving_block')">移动的方块</a></td>
+
+<td>moving_block</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('command_block_minecart')">命令方块矿车</a></td>
+
+<td>command_block_minecart</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('minecart')">矿车</a></td>
+
+<td>minecart</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('thrown_trident')">三叉戟</a></td>
+
+<td>thrown_trident</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('tropicalfish')">热带鱼</a></td>
+
+<td>tropicalfish</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('turtle')">海龟</a></td>
+
+<td>turtle</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('dolphin')">海豚</a></td>
+
+<td>dolphin</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('bee')">蜜蜂</a></td>
+
+<td>bee</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('chest_minecart')">运输矿车</a></td>
+
+<td>chest_minecart</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('tnt_minecart')">TNT矿车</a></td>
+
+<td>tnt_minecart</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('hopper_minecart')">漏斗矿车</a></td>
+
+<td>hopper_minecart</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('spawner_minecart')">刷怪笼矿车</a></td>
+
+<td>spawner_minecart</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('furnace_minecart')">动力矿车</a></td>
+
+<td>furnace_minecart</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('elder_guardian')">远古守卫者</a></td>
+
+<td>elder_guardian</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('elder_guardian_ghost')">远古守卫者灵魂</a></td>
+
+<td>elder_guardian_ghost</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('boat')">船</a></td>
+
+<td>boat</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('bat')">蝙蝠</a></td>
+
+<td>bat</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('blaze')">烈焰人</a></td>
+
+<td>blaze</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wither_skeleton')">凋灵骷髅</a></td>
+
+<td>wither_skeleton</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('stray')">流浪者</a></td>
+
+<td>stray</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('husk')">尸壳</a></td>
+
+<td>husk</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('zombie_villager')">僵尸村民</a></td>
+
+<td>zombie_villager</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('evoker')">唤魔者</a></td>
+
+<td>evoker</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('evocation_illager')">唤魔者</a></td>
+
+<td>evocation_illager</td>
+
+<td>及基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('vex')">恼鬼</a></td>
+
+<td>vex</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('vindicator')">卫道士</a></td>
+
+<td>vindicator</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('pillager')">掠夺者</a></td>
+
+<td>pillager</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('illusioner')">幻术师</a></td>
+
+<td>illusioner</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('creeper')">苦力怕</a></td>
+
+<td>creeper</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('skeleton')">骷髅</a></td>
+
+<td>skeleton</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('spider')">蜘蛛</a></td>
+
+<td>spider</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('cave_spider')">洞穴蜘蛛</a></td>
+
+<td>cave_spider</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('giant')">巨人</a></td>
+
+<td>giant</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('zombie')">僵尸</a></td>
+
+<td>zombie</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('slime')">史莱姆</a></td>
+
+<td>slime</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ghast')">恶魂</a></td>
+
+<td>ghast</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('zombie_pigman')">僵尸猪人</a></td>
+
+<td>zombie_pigman</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('zombie_piglin')">僵尸猪灵</a></td>
+
+<td>zombie_piglin</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('piglin')">猪灵</a></td>
+
+<td>piglin</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('enderman')">末影人</a></td>
+
+<td>enderman</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('endermite')">末影螨</a></td>
+
+<td>endermite</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('silverfish')">蠹虫</a></td>
+
+<td>silverfish</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('pufferfish')">河豚</a></td>
+
+<td>pufferfish</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ravager')">劫掠兽</a></td>
+
+<td>ravager</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('salmon')">鲑鱼</a></td>
+
+<td>salmon</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('potion')">喷溅药水</a></td>
+
+<td>potion</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('splash_potion')">喷溅药水</a></td>
+
+<td>splash_potion</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('magma_cube')">岩浆怪</a></td>
+
+<td>magma_cube</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ender_dragon')">末影龙</a></td>
+
+<td>ender_dragon</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wither')">凋灵</a></td>
+
+<td>wither</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('guardian')">守卫者</a></td>
+
+<td>guardian</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('shulker')">潜影贝</a></td>
+
+<td>shulker</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('skeleton_horse')">骷髅马</a></td>
+
+<td>skeleton_horse</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('zombie_horse')">僵尸马</a></td>
+
+<td>zombie_horse</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('donkey')">驴</a></td>
+
+<td>donkey</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('mule')">骡</a></td>
+
+<td>mule</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('pig')">猪</a></td>
+
+<td>pig</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('sheep')">羊</a></td>
+
+<td>sheep</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('cow')">牛</a></td>
+
+<td>cow</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('chicken')">鸡</a></td>
+
+<td>chicken</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('squid')">鱿鱼</a></td>
+
+<td>squid</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wolf')">狼</a></td>
+
+<td>wolf</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('mooshroom')">哞菇</a></td>
+
+<td>mooshroom</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('snow_golem')">雪傀儡</a></td>
+
+<td>snow_golem</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('iron_golem')">铁傀儡</a></td>
+
+<td>iron_golem</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('ocelot')">豹猫</a></td>
+
+<td>ocelot</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('horse')">马</a></td>
+
+<td>horse</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('rabbit')">兔子</a></td>
+
+<td>rabbit</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('polar_bear')">北极熊</a></td>
+
+<td>polar_bear</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('llama')">羊驼</a></td>
+
+<td>llama</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('parrot')">鹦鹉</a></td>
+
+<td>parrot</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('villager')">村民</a></td>
+
+<td>villager</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('player')">玩家</a></td>
+
+<td>player</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('lightning_bolt')">闪电</a></td>
+
+<td>lightning_bolt</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('fishing_bobber')">鱼竿浮标</a></td>
+
+<td>fishing_bobber</td>
+
+<td>仅Java版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('fishing_hook')">鱼竿浮标</a></td>
+
+<td>fishing_hook</td>
+
+<td>仅基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('npc')">NPC</a></td>
+
+<td>npc</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('drowned')">溺尸</a></td>
+
+<td>drowned</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('wandering_trader')">流浪商人</a></td>
+
+<td>wandering_trader</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('panda')">熊猫</a></td>
+
+<td>panda</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('phantom')">幻翼</a></td>
+
+<td>phantom</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('fox')">狐狸</a></td>
+
+<td>fox</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('netease:pet')">我的伙伴</a></td>
+
+<td>netease:pet</td>
+
+<td>仅网易基岩版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('agent')">智能体(吉祥物)</a></td>
+
+<td>agent</td>
+
+<td>仅教育版</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('allay')">悦灵(小安粒)</a></td>
+
+<td>allay</td>
+
+<td>仅1.19+</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('frog')">青蛙</a></td>
+
+<td>frog</td>
+
+<td>仅1.19+</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('tadpole')">蝌蚪</a></td>
+
+<td>tadpole</td>
+
+<td>仅1.19+</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('warden')">监守者(循声守卫)</a></td>
+
+<td>warden</td>
+
+<td>仅1.19+</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('chest_boat')">运输船</a></td>
+
+<td>chest_boat</td>
+
+<td>仅1.19+</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<td><a href="#" onclick="clipboard.copy('trader_llama')">行商羊驼</a></td>
+
+<td>trader_llama</td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+            <hr>
+
+        </div>
+
+        <div class="card" style="margin-top: 20px;padding: 16px 24px">
+
+            ©<a href="https://shyvc.github.io/">千秋工作室</a>
+
+             2016~2022 版权所有
+
+            <span style="float: right">
+
+            </span>
+
+        </div>
+
+    </div>
+
+</body>
