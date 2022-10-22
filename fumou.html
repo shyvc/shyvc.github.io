@@ -1,0 +1,683 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+
+      var clipboard = function (window, document, navigator) {
+
+          var textArea, copy;
+
+ 
+
+          function isOS() {
+
+              return navigator.userAgent.match(/ipad|iphone/i);
+
+          }
+
+ 
+
+          function createTextArea(text) {
+
+              textArea = document.createElement('textArea');
+
+              textArea.value = text;
+
+              document.body.appendChild(textArea);
+
+          }
+
+ 
+
+          function selectText() {
+
+              var range, selection;
+
+ 
+
+              if (isOS()) {
+
+                  range = document.createRange();
+
+                  range.selectNodeContents(textArea);
+
+                  selection = window.getSelection();
+
+                  selection.removeAllRanges();
+
+                  selection.addRange(range);
+
+                  textArea.setSelectionRange(0, 999999);
+
+              } else {
+
+                  textArea.select();
+
+              }
+
+          }
+
+ 
+
+          function copyToClipboard() {
+
+              document.execCommand('copy');
+
+              document.body.removeChild(textArea);
+
+          }
+
+ 
+
+          copy = function copy(text) {
+
+              createTextArea(text);
+
+              selectText();
+
+              copyToClipboard();
+
+          };
+
+ 
+
+          return {
+
+              copy: copy
+
+          };
+
+      }(window, document, navigator);
+
+</script>
+
+<link rel="icon" type="image/png" href="https://bsc.meteormc.cn/id/favicon.ico">
+
+    <title>附魔ID </title>
+
+    <style>
+
+        body {
+
+            font-family: 'Microsoft YaHei';
+
+            background: rgb(241, 241, 241);
+
+        }
+
+        a {
+
+            color: black;
+
+            text-decoration: none;
+
+            color: olive;
+
+        }
+
+        .card-container {
+
+            width: 35em;
+
+            margin: 64px auto;
+
+        }
+
+        .card {
+
+            opacity: 0.87;
+
+            padding: 24px 32px;
+
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+            border-radius: 2px;
+
+            background: white;
+
+            margin-bottom: 8px;
+
+            position: relative;
+
+        }
+
+        .node {
+
+            position: absolute;
+
+            top: 16px;
+
+            right: 24px;
+
+            opacity: 0.68;
+
+            font-size: 48px;
+
+            font-weight: 400;
+
+        }
+
+    </style>
+
+<meta content="target-densitydpi=400" name="viewport"><meta content="target-densitydpi=400" name="viewport"></head>
+
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+
+            <h1 style="margin: 0">Minecraft附魔ID列表</h1>
+
+            <p>千秋工作室出品</p>
+
+<!--千秋工作室出品-->
+
+            <hr>
+
+            <p>点击附魔名称即可复制</p>
+
+        </div>
+
+<hr>
+
+        <div class="card">
+
+            <table>
+
+<thead>
+
+<tr>
+
+<th>编号</th>
+
+<th>附魔名称</th>
+
+<th>附魔ID</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>0</th>
+
+<td><a href="#" onclick="clipboard.copy('protection')">保护</a></td>
+
+<td>protection</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>1</th>
+
+<td><a href="#" onclick="clipboard.copy('fire_protection')">火焰保护</a></td>
+
+<td>fire_protection</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>2</th>
+
+<td><a href="#" onclick="clipboard.copy('feather_falling')">摔落保护</a></td>
+
+<td>feather_falling</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>3</th>
+
+<td><a href="#" onclick="clipboard.copy('blast_protection')">爆炸保护</a></td>
+
+<td>blast_protection</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>4</th>
+
+<td><a href="#" onclick="clipboard.copy('projectile_protection')">弹射物保护</a></td>
+
+<td>projectile_protection</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>5</th>
+
+<td><a href="#" onclick="clipboard.copy('thorns')">荆棘</a></td>
+
+<td>thorns</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>6</th>
+
+<td><a href="#" onclick="clipboard.copy('respiration')">水下呼吸</a></td>
+
+<td>respiration</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>7</th>
+
+<td><a href="#" onclick="clipboard.copy('depth_strider')">深海探索者</a></td>
+
+<td>depth_strider</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>8</th>
+
+<td><a href="#" onclick="clipboard.copy('aqua_affinity')">水下速掘</a></td>
+
+<td>aqua_affinity</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>9</th>
+
+<td><a href="#" onclick="clipboard.copy('sharpness')">锋利</a></td>
+
+<td>sharpness</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>10</th>
+
+<td><a href="#" onclick="clipboard.copy('smite')">亡灵杀手</a></td>
+
+<td>smite</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>11</th>
+
+<td><a href="#" onclick="clipboard.copy('bane_of_atrhropods')">节肢杀手</a></td>
+
+<td>bane_of_atrhropods</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>12</th>
+
+<td><a href="#" onclick="clipboard.copy('knock_back')">击退</a></td>
+
+<td>knock_back</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>13</th>
+
+<td><a href="#" onclick="clipboard.copy('fire_aspect')">火焰附加</a></td>
+
+<td>fire_aspect</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>14</th>
+
+<td><a href="#" onclick="clipboard.copy('looting')">抢夺</a></td>
+
+<td>looting</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>15</th>
+
+<td><a href="#" onclick="clipboard.copy('efficiency')">效率</a></td>
+
+<td>efficiency</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>16</th>
+
+<td><a href="#" onclick="clipboard.copy('silk_touch')">精准采集</a></td>
+
+<td>silk_touch</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>17</th>
+
+<td><a href="#" onclick="clipboard.copy('unbreaking')">耐久</a></td>
+
+<td>unbreaking</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>18</th>
+
+<td><a href="#" onclick="clipboard.copy('fortune')">时运</a></td>
+
+<td>fortune</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>19</th>
+
+<td><a href="#" onclick="clipboard.copy('thorns')">力量</a></td>
+
+<td>power</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>20</th>
+
+<td><a href="#" onclick="clipboard.copy('punch')">冲击</a></td>
+
+<td>punch</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>21</th>
+
+<td><a href="#" onclick="clipboard.copy('flame')">火矢</a></td>
+
+<td>flame</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>22</th>
+
+<td><a href="#" onclick="clipboard.copy('infinity')">无限</a></td>
+
+<td>infinity</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>23</th>
+
+<td><a href="#" onclick="clipboard.copy('luck_of_the_sea')">海之眷顾</a></td>
+
+<td>luck_of_the_sea</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>24</th>
+
+<td><a href="#" onclick="clipboard.copy('lure')">饵钓</a></td>
+
+<td>lure</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>25</th>
+
+<td><a href="#" onclick="clipboard.copy('frost_walker')">冰霜行者</a></td>
+
+<td>frost_walker</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>26</th>
+
+<td><a href="#" onclick="clipboard.copy('mending')">经验修补</a></td>
+
+<td>mending</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>27</th>
+
+<td><a href="#" onclick="clipboard.copy('binding_curse')">绑定诅咒</a></td>
+
+<td>binding_curse</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>28</th>
+
+<td><a href="#" onclick="clipboard.copy('vanishing_curse')">消失诅咒</a></td>
+
+<td>vanishing_curse</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>29</th>
+
+<td><a href="#" onclick="clipboard.copy('impaling')">穿刺</a></td>
+
+<td>impaling</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>30</th>
+
+<td><a href="#" onclick="clipboard.copy('riptide')">激流</a></td>
+
+<td>riptide</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>31</th>
+
+<td><a href="#" onclick="clipboard.copy('loyalty')">忠诚</a></td>
+
+<td>loyalty</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>32</th>
+
+<td><a href="#" onclick="clipboard.copy('channeling')">引雷</a></td>
+
+<td>channeling</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>33</th>
+
+<td><a href="#" onclick="clipboard.copy('multishot')">多重箭</a></td>
+
+<td>multishot</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>34</th>
+
+<td><a href="#" onclick="clipboard.copy('piercing')">穿透</a></td>
+
+<td>piercing</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>35</th>
+
+<td><a href="#" onclick="clipboard.copy('quick_charge')">快速装填</a></td>
+
+<td>quick_charge</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>36</th>
+
+<td><a href="#" onclick="clipboard.copy('soul_speed')">灵魂疾行</a></td>
+
+<td>soul_speed</td>
+
+</tr>
+
+<tr>
+
+<!--千秋工作室出品-->
+
+<th>-</th>
+
+<td><a href="#" onclick="clipboard.copy('thorns')">横扫之刃</a></td>
+
+<td>sweeping</td>
+
+<td><b>仅Java版</b></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+            <hr>
+
+        </div>
+
+        <div class="card" style="margin-top: 20px;padding: 16px 24px">
+
+            ©<a href="https://shyvc.github.io/">千秋工作室</a>
+
+             2022~2022 版权所有
+
+            <span style="float: right">
+
+            </span>
+
+        </div>
+
+    </div>
+
+</body>
