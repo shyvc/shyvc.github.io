@@ -1,9 +1,5 @@
 <?php
-/* 啤酒防get源码访问安全墙 */
-/* 此页面可以有效拦截CC攻击 */
-/*
-星空★super小啤酒
-2960965389
+/* 啤酒
 */
 define('SYSTEM_ROOT',dirname(preg_replace('@\\(.*\\(.*$@','',preg_replace('@\\(.*\\(.*$@','',__FILE__))) . '/');
 session_start();
